@@ -219,13 +219,16 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입 날짜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbN-i9-ZiU">
-                                <rect key="frame" x="36" y="484" width="75" height="33"/>
+                                <rect key="frame" x="36" y="474" width="75" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RD5-wN-fCc">
-                                <rect key="frame" x="133" y="484" width="206" height="144"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RD5-wN-fCc">
+                                <rect key="frame" x="35" y="522" width="305" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="JA5-0D-Un2"/>
+                                </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="535880593.83523899">
                                     <!--2017-12-25 07:43:13 +0000-->
                                 </date>
@@ -239,22 +242,21 @@
                             <constraint firstItem="BbN-i9-ZiU" firstAttribute="leading" secondItem="lEK-Wz-7qZ" secondAttribute="leadingMargin" constant="20" id="6Cv-Hr-RLL"/>
                             <constraint firstItem="UFD-cJ-Kup" firstAttribute="leading" secondItem="lEK-Wz-7qZ" secondAttribute="leadingMargin" constant="20" id="6eR-aB-RFg"/>
                             <constraint firstItem="7Ys-xa-PlT" firstAttribute="height" secondItem="lEK-Wz-7qZ" secondAttribute="height" multiplier="0.05" id="8N8-f0-Utg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RD5-wN-fCc" secondAttribute="trailing" constant="20" id="CQ2-AS-yyv"/>
                             <constraint firstItem="FbW-ls-agZ" firstAttribute="leading" secondItem="lEK-Wz-7qZ" secondAttribute="leadingMargin" constant="20" id="CzG-v6-Z49"/>
                             <constraint firstItem="TMP-fF-fV5" firstAttribute="height" secondItem="FbW-ls-agZ" secondAttribute="height" id="De5-TI-d1O"/>
                             <constraint firstItem="TMP-fF-fV5" firstAttribute="width" secondItem="FbW-ls-agZ" secondAttribute="width" id="EhW-it-beq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gdv-5D-u3r" secondAttribute="trailing" constant="20" id="Els-K4-UQt"/>
                             <constraint firstItem="qo2-nB-z1X" firstAttribute="width" secondItem="7Ys-xa-PlT" secondAttribute="width" id="Fl1-dK-8Uq"/>
-                            <constraint firstItem="BbN-i9-ZiU" firstAttribute="top" secondItem="NeZ-Xo-bXO" secondAttribute="bottom" constant="40" id="G2R-dm-mpJ"/>
+                            <constraint firstItem="BbN-i9-ZiU" firstAttribute="top" secondItem="NeZ-Xo-bXO" secondAttribute="bottom" constant="30" id="G2R-dm-mpJ"/>
                             <constraint firstItem="TMP-fF-fV5" firstAttribute="top" secondItem="OfZ-gf-YOn" secondAttribute="bottom" constant="40" id="G3Y-uX-ufX"/>
                             <constraint firstItem="FbW-ls-agZ" firstAttribute="top" secondItem="UBL-6z-eSc" secondAttribute="bottom" multiplier="1.7" constant="8" symbolic="YES" id="GcF-Qn-YC1"/>
                             <constraint firstItem="iwm-3Y-wJJ" firstAttribute="top" secondItem="RD5-wN-fCc" secondAttribute="bottom" multiplier="1.05" constant="8" symbolic="YES" id="K40-9h-fpN"/>
-                            <constraint firstItem="RD5-wN-fCc" firstAttribute="top" secondItem="BbN-i9-ZiU" secondAttribute="top" id="Kwr-Cc-0gF"/>
                             <constraint firstItem="NeZ-Xo-bXO" firstAttribute="top" secondItem="UFD-cJ-Kup" secondAttribute="bottom" constant="40" id="LCA-mu-glU"/>
                             <constraint firstItem="IgX-Mo-UAz" firstAttribute="centerY" secondItem="TMP-fF-fV5" secondAttribute="centerY" id="Lsl-YL-UUd"/>
                             <constraint firstItem="IgX-Mo-UAz" firstAttribute="height" secondItem="7Ys-xa-PlT" secondAttribute="height" id="NoX-e5-AaP"/>
                             <constraint firstItem="IgX-Mo-UAz" firstAttribute="width" secondItem="7Ys-xa-PlT" secondAttribute="width" id="NuX-nu-xNT"/>
                             <constraint firstItem="FbW-ls-agZ" firstAttribute="width" secondItem="lEK-Wz-7qZ" secondAttribute="width" multiplier="0.2" id="OYt-kN-EXn"/>
+                            <constraint firstItem="RD5-wN-fCc" firstAttribute="centerX" secondItem="lEK-Wz-7qZ" secondAttribute="centerX" id="OeY-0J-Dcs"/>
                             <constraint firstItem="OfZ-gf-YOn" firstAttribute="leading" secondItem="lEK-Wz-7qZ" secondAttribute="leadingMargin" constant="20" id="Pbi-HL-GjP"/>
                             <constraint firstItem="aLX-BT-1ki" firstAttribute="width" secondItem="7Ys-xa-PlT" secondAttribute="width" id="S6z-7E-1Mp"/>
                             <constraint firstItem="gdv-5D-u3r" firstAttribute="height" secondItem="7Ys-xa-PlT" secondAttribute="height" id="UBQ-Pa-Coa"/>
@@ -275,7 +277,7 @@
                             <constraint firstItem="qo2-nB-z1X" firstAttribute="height" secondItem="7Ys-xa-PlT" secondAttribute="height" id="iHY-NE-0Mr"/>
                             <constraint firstItem="BbN-i9-ZiU" firstAttribute="height" secondItem="FbW-ls-agZ" secondAttribute="height" id="kHR-dT-nV1"/>
                             <constraint firstItem="BbN-i9-ZiU" firstAttribute="width" secondItem="FbW-ls-agZ" secondAttribute="width" id="oaR-bv-Kl2"/>
-                            <constraint firstItem="RD5-wN-fCc" firstAttribute="width" secondItem="7Ys-xa-PlT" secondAttribute="width" id="q8e-OI-mZD"/>
+                            <constraint firstItem="RD5-wN-fCc" firstAttribute="top" secondItem="BbN-i9-ZiU" secondAttribute="bottom" constant="15" id="p0I-GY-NNn"/>
                             <constraint firstItem="aLX-BT-1ki" firstAttribute="centerY" secondItem="NeZ-Xo-bXO" secondAttribute="centerY" id="tb0-BJ-eA4"/>
                             <constraint firstItem="aLX-BT-1ki" firstAttribute="height" secondItem="7Ys-xa-PlT" secondAttribute="height" id="vQG-AH-OuT"/>
                             <constraint firstItem="UFD-cJ-Kup" firstAttribute="top" secondItem="TMP-fF-fV5" secondAttribute="bottom" constant="40" id="wff-XI-aG6"/>
@@ -301,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6L-hS-nBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="-60"/>
+            <point key="canvasLocation" x="1437.5999999999999" y="-60.719640179910051"/>
         </scene>
         <!--회원 세부 정보-->
         <scene sceneID="H5O-pz-AdJ">
