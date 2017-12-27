@@ -60,6 +60,28 @@ class SaveMemViewController: UIViewController, UITextFieldDelegate {
         object.setValue(joinDatePicker.date, forKey: "joinDate")
         object.setValue(Date(), forKey: "editDate")
         
+        // 시드 분류
+        var txtSeed: String?
+        
+        if let checkAver = aver {
+            if checkAver >= 160 {
+                txtSeed = "1시드(160이상)"
+            } else if checkAver >= 140 && checkAver < 160 {
+                txtSeed = "2시드(140-160)"
+            } else if checkAver >= 120 && checkAver < 140 {
+                txtSeed = "3시드(120-140)"
+            } else if checkAver >= 100 && checkAver < 120 {
+                txtSeed = "4시드(100-120)"
+            } else if checkAver >= 80 && checkAver < 100 {
+                txtSeed = "5시드(80-100)"
+            } else if checkAver < 80 {
+                txtSeed = "6시드(80이하)"
+            }
+        }
+        
+        object.setValue(txtSeed, forKey: "seed")
+
+        
         do {
             try context.save()
             print("saved!")

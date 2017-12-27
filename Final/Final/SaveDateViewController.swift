@@ -57,17 +57,17 @@ class SaveDateViewController: UIViewController, UITextFieldDelegate {
         
         // 시드 분류
         if aver >= 160 {
-            memList[indexNum].seed = "1시드"
+            memList[indexNum].seed = "1시드(160이상)"
         } else if aver >= 140 && aver < 160 {
-            memList[indexNum].seed = "2시드"
+            memList[indexNum].seed = "2시드(140-160)"
         } else if aver >= 120 && aver < 140 {
-            memList[indexNum].seed = "3시드"
+            memList[indexNum].seed = "3시드(120-140)"
         } else if aver >= 100 && aver < 120 {
-            memList[indexNum].seed = "4시드"
+            memList[indexNum].seed = "4시드(100-120)"
         } else if aver >= 80 && aver < 100 {
-            memList[indexNum].seed = "5시드"
+            memList[indexNum].seed = "5시드(80-100)"
         } else if aver < 80 {
-            memList[indexNum].seed = "6시드"
+            memList[indexNum].seed = "6시드(80이하)"
         }
     
         do {
